@@ -1,5 +1,5 @@
 # SCCBD-Server  
-Server of the Cibersecurity project (SCCBD)  
+Server of the Cibersecurity (SCCBD) test project by Marc Cayuelas  
   
 ## Scripts
 `npm run dev` Run in development  
