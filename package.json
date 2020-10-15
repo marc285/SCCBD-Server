@@ -21,11 +21,13 @@
   "homepage": "https://github.com/marc285/SCCBD-Server#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "crypto-js": "^4.0.0",
     "express": "^4.17.1",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.7",
+    "@types/crypto-js": "^4.0.1",
     "@types/express": "^4.17.8",
     "@types/morgan": "^1.9.1",
     "@types/node": "^14.11.2",

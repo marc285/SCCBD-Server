@@ -8,5 +8,6 @@ Server of the Cibersecurity project (SCCBD)
   
 ## API ENDPOINTS  
   
-**GET** `/text/get` Sends to the Server a test Text (Server port)  
-**POST** `/text/post` Receives a Text from the Client  
+**GET** `/txt/get` Sends to the Server a test Text (Server port)  
+**POST** `/txt/post` Receives a Text from the Client  
+  
