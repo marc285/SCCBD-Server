@@ -1,9 +1,17 @@
 import { Router } from 'express';
-import criptoController from '../controllers/criptoController';
+
+import AEScriptoController from '../controllers/AEScriptoController';
+import RSAcriptoController from '../controllers/RSAcriptoController';
 
 const router: Router = Router();
 
-router.get('/encrypt', criptoController.AESencrypt);
-router.post('/decrypt', criptoController.AESdecrypt);
+router.get('/AESgetEncrypted', AEScriptoController.getEncrypted);
+router.post('/AESdecrypt', AEScriptoController.decrypt);
+
+router.post('/RSAkeyExchange', RSAcriptoController.keyExchange);
+router.get('/RSAgetEncrypted', RSAcriptoController.getEncrypted);
+router.post('/RSAdecrypt', RSAcriptoController.decrypt);
+router.get('/RSAgetSigned', RSAcriptoController.getSigned);
+router.post('/RSAverify', RSAcriptoController.verify);
 
 export default router;
