@@ -16,10 +16,10 @@ class bsController {
             let blindSignature: bigint = serverParams.getRSAkpriv().sign(blindedMessage);
             console.log(`Blind Signature: ${blindSignature}`);
 
-            res.status(200).json({ 'bs': bigintConversion.bigintToHex(blindSignature)})
+            res.status(200).json({'bs': bigintConversion.bigintToHex(blindSignature)});
         }
         catch{
-            res.status(500).json({ 'bs': 'Internal Server Error'});
+            res.status(500).json({'bs': 'Internal Server Error'});
         }
     }
 
